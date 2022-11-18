@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1>hello world!!!</h1>
+    <button id="btn">Click Me</button> -->
+
+    <h1><p id="na"></p></h1>
+    <div id="form" class="container">
+      <form>
+        <h1>Fill in five of your favorite animals</h1>
+        <label for="fanimal">First animal:</label>
+        <br />
+        <input type="text" name="fanimal" id="animal1" class="animals"/><br />
+        <label for="sanimal">Second animal:</label>
+        <br />
+        <input type="text" name="sanimal" id="animal2" class="animals" /><br />
+        <label for="tanimal">Third animal:</label>
+        <br />
+        <input type="text" name="tanimal" id="animal3" class="animals" /><br />
+        <label for="foanimal">Forth animal:</label>
+        <br />
+        <input type="text" name="foanimal" id="animal4" class="animals" /><br />
+        <label for="fianimal">Fifth animal:</label>
+        <br />
+        <input type="text" name="fianimal" id="animal5" class="animals" /><br />
+        <button onclick="myFunction()">enter</button>
+      </form>
+    </div>
+
+    <script src="./index.js"></script>
+    <script>
+      
+      function greeting() {
+        na = prompt("What is your name?");
+        alert("Hello " + na);
+      document.getElementById("na").innerHTML = na;
+        if (na) {
+          alert(na + ", please complete the form below.");
+        } else {
+          alert("Name don't exist.");
+          greeting();
+        }
+      }
+      greeting();
+      function hideForm(){
+        let animal1 = document.getElementById('animal1').value;
+            animal2 = document.getElementById('animal2').value;
+            animal3 = document.getElementById('animal3').value;
+            animal4 = document.getElementById('animal4').value;
+            animal5 = document.getElementById('animal5').value;
+          
+      }
+      // function myFunction() {
+      //   let animal1 = document.getElementById('fanimal').value;
+      //   console.log(animal1);
+      //   let animal2 = document.getElementById('sanimal').value;
+      //   console.log(animal2);
+      //   let animal3 = document.getElementById('tanimal').value;
+      //   console.log(animal3);
+      //   let animal4 = document.getElementById('foanimal').value;
+      //   console.log(animal4);
+      //   let animal5 = document.getElementById('fianimal').value;
+      //   console.log(animal5);
+      //   if (animal1, animal2, animal3, animal4, animal5) {
+      //   System.out.println(animal1, animal2, animal3, animal4, animal5);
+      //   }else{
+      //     myFunction();
+      //   }
+      // }
+     
+      // let name = prompt('What is your name?');
+      // function greet(){
+      //   console.log('Hello '+ name);
+      // }
+      // greet();
+      //   var n;
+      // name = prompt("What is your name?");
+      // if (name) alert('Hello ' + name);
+      // else alert(n + " is odd");
+
+      
+    </script>
+  </body>
+</html>
